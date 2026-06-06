@@ -3,7 +3,7 @@ Group project
 
 Team Members
 - Esosa EMokpae
-- 
+- Jankat Erel
 - 
 
 Project
