@@ -4,7 +4,7 @@ Group project
 Team Members
 - Esosa EMokpae
 - Jankat Erel
-- 
+- Ranbir Dhanki
 
 Project
 Blackjack Card Game
