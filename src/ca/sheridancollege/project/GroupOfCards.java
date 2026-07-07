@@ -13,19 +13,23 @@ import java.util.Collections;
  * HINT, you might want to subclass this more than once.
  * The group of cards has a maximum size attribute which is flexible for reuse.
  * @author dancye
+ * modified by Esosa Emokpae, Jankat Erel, Ranbir Dhanki - July 2026
+ *           (initialized the cards ArrayList in the constructor and
+ *           added the addCard() method so subclasses can add cards)
  */
-public class GroupOfCards 
+public class GroupOfCards
 {
-   
+
     //The group of cards, stored in an ArrayList
     private ArrayList <Card> cards;
     private int size;//the size of the grouping
-    
+
     public GroupOfCards(int givenSize)
     {
         size = givenSize;
+        cards = new ArrayList<>();
     }
-    
+
     /**
      * A method that will get the group of cards as an ArrayList
      * @return the group of cards.
@@ -34,7 +38,16 @@ public class GroupOfCards
     {
         return cards;
     }
-    
+
+    /**
+     * Adds a card to this group of cards.
+     * @param card the card to add
+     */
+    public void addCard(Card card)
+    {
+        cards.add(card);
+    }
+
     public void shuffle()
     {
         Collections.shuffle(cards);
@@ -53,5 +66,5 @@ public class GroupOfCards
     public void setSize(int givenSize) {
         size = givenSize;
     }
-    
+
 }//end class
