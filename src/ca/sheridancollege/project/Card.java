@@ -7,20 +7,21 @@ package ca.sheridancollege.project;
 
 /**
  * A class to be used as the base Card class for the project. Must be general
- * enough to be instantiated for any Card game. Students wishing to add to the code 
+ * enough to be instantiated for any Card game. Students wishing to add to the code
  * should remember to add themselves as a modifier.
  * @author dancye, 2018
+ * modified by Esosa Emokpae, Jankat Erel, Ranbir Dhanki - July 2026
+ *           (reviewed for our Blackjack game and kept as an abstract base.
+ *           PlayingCard is our only child of it, and that is where the rank,
+ *           the suit and the card value were added.)
  */
-public abstract class Card 
+public abstract class Card
 {
-    //default modifier for child classes
-    
     /**
-     * Students should implement this method for their specific children classes 
+     * Students should implement this method for their specific children classes.
      * @return a String representation of a card. Could be an UNO card, a regular playing card etc.
      */
-    
     @Override
     public abstract String toString();
-    
+
 }

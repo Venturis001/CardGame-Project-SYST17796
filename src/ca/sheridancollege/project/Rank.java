@@ -9,7 +9,7 @@ package ca.sheridancollege.project;
  *
  * @author Esosa Emokpae, Jankat Erel, Ranbir Dhanki - July 2026
  */
-public enum Rank 
+public enum Rank
 {
     TWO(2), THREE(3), FOUR(4),
     FIVE(5), SIX(6), SEVEN(7),
@@ -18,14 +18,14 @@ public enum Rank
 
     //the Blackjack value of this rank
     private final int value;
-    
+
     Rank(int value)
     {
         this.value = value;
     }
-    
+
     /**
-     * return the Blackjack value of this rank
+     * @return the Blackjack value of this rank
      */
     public int getValue()
     {

@@ -21,8 +21,8 @@ public class GroupOfCards
 {
 
     //The group of cards, stored in an ArrayList
-    private ArrayList <Card> cards;
-    private int size;//the size of the grouping
+    private ArrayList<Card> cards;
+    private int size;//the most cards this grouping was built to hold
 
     public GroupOfCards(int givenSize)
     {
@@ -54,7 +54,9 @@ public class GroupOfCards
     }
 
     /**
-     * @return the size of the group of cards
+     * This is the size the group was created for, not a live count. For how
+     * many cards are actually being held right now, use showCards().size().
+     * @return the maximum size of the group of cards
      */
     public int getSize() {
         return size;
